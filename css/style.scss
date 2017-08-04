@@ -60,12 +60,29 @@ span{
         &__item{
             text-align: center;
             padding-top: 24px;
+            .bars{
+                position: absolute;
+                left: 20px;
+                top: 110px;
+                @media only screen and (min-width: 768px) {
+                    display: none;
+                }
+                .fa-bars{
+                    color: #fff;
+                    font-size: 22px;
+                    cursor: pointer;
+                    &:hover{
+                        color:#BCD3CD;
+                    }
+                }
+            }
             img{
                 margin: 0 auto;
             }
-            ul{
+            .nav{
+                display: none;
                 @media only screen and (min-width: 768px) {
-                    display:flex;
+                    display:flex !important;
                     justify-content:space-between;
                 }
                 li{
@@ -76,6 +93,9 @@ span{
                         color:#9FA0A3;
                         font-size:15px;
                         text-decoration:underline;
+                        &:hover{
+                            color:#fff;
+                        }
                     }
                     @media only screen and (min-width: 768px) {
                         display: inline-block;
@@ -84,7 +104,8 @@ span{
             }
             .number{
                 display: inline-block;
-                width: 100%;
+                width: 260px;
+                margin: 0 auto;
                 height: 46px;
                 border-radius:10em;
                 font-family: "SegoeUILight";
@@ -92,11 +113,20 @@ span{
                 font-size: 18px;
                 line-height: 38px;
                 padding-left: 32px;
+                border:2px solid #98999B;
+                background: url(../img/tel.png) no-repeat left 15px center;
+                @media only screen and (min-width: 768px) {
+                    // border:none;
+                    width: 100%;
+                    background: none;
+                    padding-left: 0;
+                }
                 @media only screen and (min-width: 992px) {
                     background: url(../img/tel.png) no-repeat left 15px center;
                     font-size: 25px;
                     border:2px solid #98999B;
                     width: 272px;
+                    padding-left: 32px;
                 }
                 b{
                     font-family: "SegoeUIBold";
@@ -129,21 +159,24 @@ span{
             color: white;
             opacity: 0.86;
             text-align: center;
-            // font-size: 35px;
             font-size: 28px;
-            @media only screen and (min-width: 768px) {
-               text-align: left;
-               font-size: 35px;
-           }
-           @media only screen and (min-width: 1240px) {
-                font-size: 41px;
-           }
-       }
-       p{
+            @media only screen and (min-width: 992px) {
+             text-align: left;
+             font-size: 35px;
+         }
+         @media only screen and (min-width: 1240px) {
+            font-size: 41px;
+        }
+    }
+    p{
         padding-top: 21px;
         font-family: "SegoeUIItalic";
         color: white;
         font-size: 18px;
+        text-align: center;
+        @media only screen and (min-width: 992px) {
+            text-align: left;
+        }
     }
     &__video{
         padding-top: 56px;
@@ -174,13 +207,18 @@ span{
         }
     }
     &__phone{
-        background: url(../img/iphone.png) no-repeat top center;
+        background: url(../img/mob-bg.jpg) no-repeat top center;
         width: 100%;
-        height: 718px;
-        padding: 117px 0px 120px;
+        background-size: cover;
+        padding: 50px 10px 50px;
         text-align: center;
+        margin-top: 30px;
         @media only screen and (min-width: 380px) {
             width: 356px;
+            margin: 30px auto;
+            background: url(../img/iphone.png) no-repeat top center;
+            height: 718px;
+            padding: 117px 0px 120px;
         }
         @media only screen and (min-width: 992px) {
             position: absolute;
@@ -196,11 +234,11 @@ span{
             color:#FFFFFF;
             font-size: 25px;
             b{
-               font-family: "SegoeUISemiBold";
-           }
-       }
-   }
-   .form-header{
+             font-family: "SegoeUISemiBold";
+         }
+     }
+ }
+ .form-header{
     margin-top: 27px;
     input[type="text"]{
         background: none;

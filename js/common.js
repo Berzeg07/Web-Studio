@@ -3,10 +3,9 @@ $(document).ready(function(){
 	// Мобильное меню 
 	$(".fa-bars").click(function(m){
 		m.preventDefault();
-		$(".header__menu-box").slideToggle(500);
+		$(".nav").slideToggle(500);
 	});
 	// Конец Мобильное меню
-
 
     // Fancybox
     $("a[rel=group]").fancybox({
@@ -17,8 +16,6 @@ $(document).ready(function(){
             return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
         }
     });
-
-
 
     $(".phone").mask("+ 7 (999) 999 - 99 - 99?"); 
 

@@ -24,9 +24,12 @@
 				<div class="header_top__item">
 					<img class="img-responsive" src="img/logo.png" alt="">
 				</div>
-
+				
 				<div class="header_top__item">
-					<ul>
+					<div class="bars">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<ul class="nav">
 						<li><a href="#">главная</a></li>
 						<li><a href="#">цены</a></li>
 						<li><a href="#">кейсы</a></li>
