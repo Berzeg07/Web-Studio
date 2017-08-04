@@ -75,8 +75,8 @@
 								</div>
 
 								<form class="form-header" action="#">
-									<input type="text" placeholder="Ваше имя">
-									<input class="phone" type="text" placeholder="Ваш телефон">
+									<input type="text" placeholder="Ваше имя" required>
+									<input class="phone" type="text" placeholder="Ваш телефон" required>
 									<button type="submit">хочу новых клиентов</button>
 								</form>
 								<span>Бесплатно</span>
