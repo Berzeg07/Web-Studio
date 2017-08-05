@@ -161,10 +161,10 @@ span{
             text-align: center;
             font-size: 28px;
             @media only screen and (min-width: 992px) {
-             text-align: left;
-             font-size: 35px;
-         }
-         @media only screen and (min-width: 1240px) {
+               text-align: left;
+               font-size: 35px;
+           }
+           @media only screen and (min-width: 1240px) {
             font-size: 41px;
         }
     }
@@ -234,11 +234,11 @@ span{
             color:#FFFFFF;
             font-size: 25px;
             b{
-             font-family: "SegoeUISemiBold";
-         }
-     }
- }
- .form-header{
+               font-family: "SegoeUISemiBold";
+           }
+       }
+   }
+   .form-header{
     margin-top: 27px;
     input[type="text"]{
         background: none;
@@ -276,4 +276,87 @@ span{
     }
 }
 }
+}
+
+/* 2-block
+=========================*/
+.icons{
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-content:space-between;
+    }
+    &_item{
+        text-align: center;
+        display: inline-block;
+        &__inner{
+            cursor:pointer;
+            overflow:hidden;
+            width: 94px;
+            margin: 0 auto;
+            .ico-none{
+                display: none;
+            }
+        }
+        &__inner1:hover{
+            .ico1{
+                display: none;
+            }
+            .ico1-2{
+                display: inline-block;
+            }
+        }
+        &__inner2:hover{
+            .ico2{
+                display: none;
+            }
+            .ico2-2{
+                display: inline-block;
+            }
+        }
+        &__inner3:hover{
+            .ico3{
+                display: none;
+            }
+            .ico3-2{
+                display: inline-block;
+            }
+        }
+        &__inner4:hover{
+            .ico4{
+                display: none;
+            }
+            .ico4-2{
+                display: inline-block;
+            }
+        }
+        &__inner5:hover{
+            .ico5{
+                display: none;
+            }
+            .ico5-2{
+                display: inline-block;
+            }
+        }
+        @media only screen and (min-width: 768px) {
+            display: block;
+        }
+        div{
+            height: 110px;
+        }
+        span{
+            text-transform: uppercase;
+            font-family: "SegoeUILight";
+            color: #231f20;
+            font-size: 15px;
+        }
+    }
+    &_item:last-child{
+        div{
+            height: 90px;
+            @media only screen and (min-width: 768px) {
+                height: 108px;
+            }
+        }
+    }
 }
