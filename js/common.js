@@ -7,57 +7,136 @@ $(document).ready(function(){
 	});
 	// Конец Мобильное меню
 
-    $(".icons_item").hover(function(e){
-        e.preventDefault();
-        $( ".dark-bg" ).fadeIn(500);
-        
-        // $( ".icons_item span" ).css('color','white');
-        $(this).mouseleave(function(m){
-             m.preventDefault();
-            $( ".dark-bg" ).fadeOut(500); 
-            // $( ".icons_item span" ).css('color','black');   
-        });
-    });
+
+
+    // $('.tab a').click(function(e) {
+    //     e.preventDefault();
+    //     var tab = $(this).attr('href');
+    //     $('.tab__box').not(tab).css({'display':'none'});
+    //     $(tab).fadeIn(400);       
+    // });
+    // $('.tab a:first').click();
 
     $(".icons_item1").hover(function(e){
-        $( ".sloi_item__1" ).css('z-index','9999');
-        $(this).mouseleave(function(m){
-              m.preventDefault();
-            $( ".sloi_item__1" ).css('z-index','5');
-         });
-    });
+        e.preventDefault();
+        $( ".txt-1" ).fadeIn(500);
+        $( ".txt-3" ).css("display","none");
+        $( ".txt-2" ).css("display","none");
+        $( ".txt-4" ).css("display","none");
+        $( ".txt-5" ).css("display","none");
+  });
 
     $(".icons_item2").hover(function(e){
-        $( ".sloi_item__2" ).css('z-index','9999');
-          $(this).mouseleave(function(m){
-              m.preventDefault();
-            $( ".sloi_item__2" ).css('z-index','4');
-        });
-    });
+        e.preventDefault();
+        $( ".txt-2" ).fadeIn(500);
+        $( ".txt-3" ).css("display","none");
+        $( ".txt-1" ).css("display","none");
+        $( ".txt-4" ).css("display","none");
+        $( ".txt-5" ).css("display","none");
+        // $('.txt-2').stop();
+      //   $(this).mouseleave(function(e){
+      //     e.preventDefault();
+      //     $( ".txt-2" ).css("display","none");
+      //     $( ".txt-1" ).fadeIn(500);
+      // });
+  });
 
-    $(".icons_item3").hover(function(e){
-        $( ".sloi_item__3" ).css('z-index','9999');
-          $(this).mouseleave(function(m){
-              m.preventDefault();
-            $( ".sloi_item__3" ).css('z-index','3');
-        });
-    });
+  //   $(".icons_item3").hover(function(m){
+  //       m.preventDefault();
+  //       $( ".txt-3" ).fadeIn(500);
+  //       $( ".txt-1" ).css("display","none");
+  //       $( ".txt-2" ).css("display","none");
+  //       $( ".txt-4" ).css("display","none");
+  //       $( ".txt-5" ).css("display","none");
+  //     //   $(this).mouseleave(function(m){
+  //     //     m.preventDefault();
+  //     //     $( ".txt-3" ).css("display","none");
+  //     //     $( ".txt-1" ).fadeIn(500);
+  //     // });
+  // });
 
-    $(".icons_item4").hover(function(e){
-        $( ".sloi_item__4" ).css('z-index','9999');
-          $(this).mouseleave(function(m){
-              m.preventDefault();
-            $( ".sloi_item__4" ).css('z-index','2');
-        });
-    });
+  //   $(".icons_item4").hover(function(e){
+  //       e.preventDefault();
+  //       $( ".txt-4" ).fadeIn(500);
+  //       $( ".txt-1" ).css("display","none");
+  //       $( ".txt-2" ).css("display","none");
+  //       $( ".txt-3" ).css("display","none");
+  //       $( ".txt-5" ).css("display","none");
+  //     //   $(this).mouseleave(function(m){
+  //     //     m.preventDefault();
+  //     //     $( ".txt-4" ).css("display","none");
+  //     //     $( ".txt-1" ).fadeIn(500);
+  //     // });
+  // });
 
-    $(".icons_item5").hover(function(e){
-        $( ".sloi_item__5" ).css('z-index','9999');
-          $(this).mouseleave(function(m){
-              m.preventDefault();
-            $( ".sloi_item__5" ).css('z-index','1');
-        });
-    });
+  //   $(".icons_item5").hover(function(e){
+  //       e.preventDefault();
+  //       $( ".txt-5" ).fadeIn(500);
+  //       $( ".txt-1" ).css("display","none");
+  //       $( ".txt-2" ).css("display","none");
+  //       $( ".txt-3" ).css("display","none");
+  //       $( ".txt-4" ).css("display","none");
+  //     //   $(this).mouseleave(function(m){
+  //     //     m.preventDefault();
+  //     //     $( ".txt-5" ).css("display","none");
+  //     //     $( ".txt-1" ).fadeIn(500);
+  //     // });
+  // });
+
+
+
+
+    // $(".icons_item").hover(function(e){
+    //     e.preventDefault();
+    //     $( ".dark-bg" ).fadeIn(500);
+
+    //     // $( ".icons_item span" ).css('color','white');
+    //     $(this).mouseleave(function(m){
+    //          m.preventDefault();
+    //         $( ".dark-bg" ).fadeOut(500); 
+    //         // $( ".icons_item span" ).css('color','black');   
+    //     });
+    // });
+
+    // $(".icons_item1").hover(function(e){
+    //     $( ".sloi_item__1" ).css('z-index','9999');
+    //     $(this).mouseleave(function(m){
+    //           m.preventDefault();
+    //         $( ".sloi_item__1" ).css('z-index','5');
+    //      });
+    // });
+
+    // $(".icons_item2").hover(function(e){
+    //     $( ".sloi_item__2" ).css('z-index','9999');
+    //       $(this).mouseleave(function(m){
+    //           m.preventDefault();
+    //         $( ".sloi_item__2" ).css('z-index','4');
+    //     });
+    // });
+
+    // $(".icons_item3").hover(function(e){
+    //     $( ".sloi_item__3" ).css('z-index','9999');
+    //       $(this).mouseleave(function(m){
+    //           m.preventDefault();
+    //         $( ".sloi_item__3" ).css('z-index','3');
+    //     });
+    // });
+
+    // $(".icons_item4").hover(function(e){
+    //     $( ".sloi_item__4" ).css('z-index','9999');
+    //       $(this).mouseleave(function(m){
+    //           m.preventDefault();
+    //         $( ".sloi_item__4" ).css('z-index','2');
+    //     });
+    // });
+
+    // $(".icons_item5").hover(function(e){
+    //     $( ".sloi_item__5" ).css('z-index','9999');
+    //       $(this).mouseleave(function(m){
+    //           m.preventDefault();
+    //         $( ".sloi_item__5" ).css('z-index','1');
+    //     });
+    // });
 
     // Fancybox
     $("a[rel=group]").fancybox({
