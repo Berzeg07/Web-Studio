@@ -161,10 +161,10 @@ span{
             text-align: center;
             font-size: 28px;
             @media only screen and (min-width: 992px) {
-             text-align: left;
-             font-size: 35px;
-         }
-         @media only screen and (min-width: 1240px) {
+               text-align: left;
+               font-size: 35px;
+           }
+           @media only screen and (min-width: 1240px) {
             font-size: 41px;
         }
     }
@@ -234,11 +234,11 @@ span{
             color:#FFFFFF;
             font-size: 25px;
             b{
-             font-family: "SegoeUISemiBold";
-         }
-     }
- }
- .form-header{
+               font-family: "SegoeUISemiBold";
+           }
+       }
+   }
+   .form-header{
     margin-top: 27px;
     input[type="text"]{
         background: none;
@@ -280,6 +280,12 @@ span{
 
 /* 2-block
 =========================*/
+.active{
+  transition:opacity 1s, visibility 1s;
+  opacity:1;
+  visibility:visible;
+  position:static;
+}
 p{
     color: #231f20;
     font-family: "SegoeUILight";
@@ -294,6 +300,13 @@ p{
     }
     &_txt{
         padding: 60px 0px 80px; 
+        min-height: 264px;
+        overflow:hidden;
+        outline:1px solid red;
+
+        opacity:0;
+        visibility:hidden;
+        position:fixed;
     }
     &_message{
         padding: 36px 5px;
@@ -305,9 +318,9 @@ p{
         -moz-box-shadow: 7px 9px 26px -2px rgba(0,0,0,0.51);
         box-shadow: 7px 9px 26px -2px rgba(0,0,0,0.51);
         @media only screen and (min-width: 768px) {
-           padding: 36px 21px;
-       }
-       b{
+         padding: 36px 21px;
+     }
+     b{
         font-family: "SegoeUIItalic";
         color:black;
         font-weight: bold;
@@ -393,6 +406,10 @@ h2{
     z-index:100;
     display:none;
 }
+.active-txt{
+    min-height: 264px;
+    outline:1px solid red;
+}
 .icons{
     text-align: center;
     padding-top: 68px;
@@ -407,8 +424,8 @@ h2{
         text-align: center;
         display: inline-block;
         -webkit-transition:1s;
-         z-index:9999;
-         outline:1px solid red;
+        z-index:9999;
+        outline:1px solid red;
       //   &:hover{
       //        z-index:9999;
       //       span{

@@ -7,39 +7,66 @@ $(document).ready(function(){
 	});
 	// Конец Мобильное меню
 
+    $(".icons_item__inner1").hover(function(e){
+        e.preventDefault();
+        $(".txt-2").removeClass("active");
+        $(".txt-3").removeClass("active");
+        $(".txt-4").removeClass("active");
+        $(".txt-5").removeClass("active");
+
+        $(".txt-1").addClass("active");
+    });
+    $(".icons_item__inner2").hover(function(e){
+        e.preventDefault();
+        $(".txt-1").removeClass("active");
+        $(".txt-3").removeClass("active");
+        $(".txt-4").removeClass("active");
+        $(".txt-5").removeClass("active");
+        $(".txt-2").addClass("active");  
+    });
+    $(".icons_item__inner3").hover(function(e){
+        e.preventDefault();
+        $(".one-t").removeClass("active");
+        $(".two-t").removeClass("active");
+        $(".three-t").addClass("active");
+    });
 
 
-    // $('.tab a').click(function(e) {
+    // $('.tab a').hover(function(e) {
     //     e.preventDefault();
+
     //     var tab = $(this).attr('href');
-    //     $('.tab__box').not(tab).css({'display':'none'});
-    //     $(tab).fadeIn(400);       
+
+    //      $('.block-2_txt').not(tab).css({'display':'none'});
+
+    //     // $(tab).css({'display':'block'});     
+    //     $(tab).fadeIn(400);  ;     
     // });
+
     // $('.tab a:first').click();
 
-    $(".icons_item1").hover(function(e){
-        e.preventDefault();
-        $( ".txt-1" ).fadeIn(500);
-        $( ".txt-3" ).css("display","none");
-        $( ".txt-2" ).css("display","none");
-        $( ".txt-4" ).css("display","none");
-        $( ".txt-5" ).css("display","none");
-  });
+  //   $(".icons_item1").hover(function(e){
+  //       e.preventDefault();
+  //       $( ".txt-1" ).fadeIn(500);
+  //       $( ".txt-3" ).css("display","none");
+  //       $( ".txt-2" ).css("display","none");
+  //       $( ".txt-4" ).css("display","none");
+  //       $( ".txt-5" ).css("display","none");
+  // });
 
-    $(".icons_item2").hover(function(e){
-        e.preventDefault();
-        $( ".txt-2" ).fadeIn(500);
-        $( ".txt-3" ).css("display","none");
-        $( ".txt-1" ).css("display","none");
-        $( ".txt-4" ).css("display","none");
-        $( ".txt-5" ).css("display","none");
-        // $('.txt-2').stop();
-      //   $(this).mouseleave(function(e){
-      //     e.preventDefault();
-      //     $( ".txt-2" ).css("display","none");
-      //     $( ".txt-1" ).fadeIn(500);
-      // });
-  });
+  //   $(".icons_item2").hover(function(e){
+  //       e.preventDefault();
+  //       $( ".txt-2" ).fadeIn(500);
+  //       $( ".txt-3" ).css("display","none");
+  //       $( ".txt-1" ).css("display","none");
+  //       $( ".txt-4" ).css("display","none");
+  //       $( ".txt-5" ).css("display","none");
+  //       $(this).mouseleave(function(e){
+  //         e.preventDefault();
+  //         $( ".txt-2" ).css("display","none");
+  //         $( ".txt-1" ).fadeIn(500);
+  //     });
+  // });
 
   //   $(".icons_item3").hover(function(m){
   //       m.preventDefault();
