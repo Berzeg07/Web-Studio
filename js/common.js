@@ -7,38 +7,90 @@ $(document).ready(function(){
 	});
 	// Конец Мобильное меню
 
-    // $("#tab1").hover(function(e){
-    //     alert(1);
-    //     e.preventDefault();
-    //     $(".txt-2").removeClass("active");
-    //     $(".txt-3").removeClass("active");
-    //     $(".txt-4").removeClass("active");
-    //     $(".txt-5").removeClass("active");
 
-    //     $(".txt-1").addClass("active");
-    // });
-    // $("#tab2").hover(function(e){
-    //     e.preventDefault();
-    //     $(".txt-1").removeClass("active");
-    //     $(".txt-3").removeClass("active");
-    //     $(".txt-4").removeClass("active");
-    //     $(".txt-5").removeClass("active");
-    //     $(".txt-2").addClass("active");  
-    // });
-    // $(".icons_item__inner3").hover(function(e){
-    //     e.preventDefault();
-    //     $(".one-t").removeClass("active");
-    //     $(".two-t").removeClass("active");
-    //     $(".three-t").addClass("active");
-    // });
-
-
-$('.tab .icons_item a').hover(function (e) {      
+    $('.tab .icons_item a').hover(function (e) {      
       var tab = $(this).attr('href');     
       $('.block-2_txt').removeClass('active');            
       $('.block-2_txt').not(tab).css('height','0');
       $(tab).addClass('active');
+  });
+
+    $('.icons_item__inner1').hover(function () { 
+        $('.sloi_item__1').css('padding-left','30px');
+        $('.sloi_item__2').css('top','80px');
+        $('.sloi_item__3').css('top','140px');
+        $('.sloi_item__4').css('top','200px');
+        $('.sloi_item__5').css('bottom','17px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__1').css('padding-left','0px');
+            $('.sloi_item__2').css('top','60px');
+            $('.sloi_item__3').css('top','120px');
+            $('.sloi_item__4').css('top','180px');
+            $('.sloi_item__5').css('bottom','37px');
+        });
     });
+
+    $('.icons_item__inner2').hover(function () { 
+        $('.sloi_item__2').css('padding-left','30px');
+        $('.sloi_item__1').css('top','-20px');
+        $('.sloi_item__3').css('top','160px');
+        $('.sloi_item__4').css('top','220px');
+        $('.sloi_item__5').css('bottom','-3px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__2').css('padding-left','0px');
+            $('.sloi_item__1').css('top','0px');
+            $('.sloi_item__3').css('top','120px');
+            $('.sloi_item__4').css('top','180px');
+            $('.sloi_item__5').css('bottom','37px');
+        });
+    });
+
+    $('.icons_item__inner3').hover(function () { 
+        $('.sloi_item__3').css('padding-left','30px');
+        $('.sloi_item__1').css('top','-20px');
+        $('.sloi_item__2').css('top','40px');
+        $('.sloi_item__4').css('top','220px');
+        $('.sloi_item__5').css('bottom','-3px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__3').css('padding-left','0px');
+            $('.sloi_item__1').css('top','0px');
+            $('.sloi_item__2').css('top','60px');
+            $('.sloi_item__4').css('top','180px');
+            $('.sloi_item__5').css('bottom','37px');
+        });
+    });
+
+    $('.icons_item__inner4').hover(function () { 
+        $('.sloi_item__4').css('padding-left','30px');
+        $('.sloi_item__1').css('top','-20px');
+        $('.sloi_item__2').css('top','40px');
+        $('.sloi_item__3').css('top','100px');
+        $('.sloi_item__5').css('bottom','-3px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__4').css('padding-left','0px');
+            $('.sloi_item__1').css('top','0px');
+            $('.sloi_item__2').css('top','60px');
+            $('.sloi_item__3').css('top','120px');
+            $('.sloi_item__5').css('bottom','37px');
+        });
+    });
+
+    $('.icons_item__inner5').hover(function () { 
+        $('.sloi_item__5').css('padding-left','30px');
+        $('.sloi_item__1').css('top','-20px');
+        $('.sloi_item__2').css('top','40px');
+        $('.sloi_item__3').css('top','100px');
+        $('.sloi_item__4').css('top','160px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__5').css('padding-left','0px');
+            $('.sloi_item__1').css('top','0px');
+            $('.sloi_item__2').css('top','60px');
+            $('.sloi_item__3').css('top','120px');
+            $('.sloi_item__4').css('top','180px');
+        });
+    });
+
+
 
     // $(".icons_item").hover(function(e){
     //     e.preventDefault();
