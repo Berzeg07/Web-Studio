@@ -437,7 +437,9 @@ h2{
     }
 
     &_item{
+        @media only screen and (min-width: 992px) {
         width: 20%;
+    }
         position: relative;
         text-align: center;
         display: inline-block;
@@ -454,42 +456,42 @@ h2{
     }
     &__inner1:hover{
         .ico1{
-            display: none;
+            display: none !important;
         }
         .ico1-2{
-            display: inline-block;
+            display: inline-block !important;
         }
     }
     &__inner2:hover{
         .ico2{
-            display: none;
+            display: none !important;
         }
         .ico2-2{
-            display: inline-block;
+            display: inline-block !important;
         }
     }
     &__inner3:hover{
         .ico3{
-            display: none;
+            display: none !important;
         }
         .ico3-2{
-            display: inline-block;
+            display: inline-block !important;
         }
     }
     &__inner4:hover{
         .ico4{
-            display: none;
+            display: none !important;
         }
         .ico4-2{
-            display: inline-block;
+            display: inline-block !important;
         }
     }
     &__inner5:hover{
         .ico5{
-            display: none;
+            display: none !important;
         }
         .ico5-2{
-            display: inline-block;
+            display: inline-block !important;
         }
     }
     @media only screen and (min-width: 768px) {

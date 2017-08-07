@@ -22,43 +22,10 @@ $(document).ready(function(){
       $(tab).addClass('active');
   });
 
+    /* слои
+    =================================*/
+
     $('.sloi_item__1').hover(function(){
-        $('.ico1').css('display','none');
-        $('.ico1-2').css('display','inline-block');
-        $(this).mouseleave(function(){
-            $('.ico1').css('display','inline-block');
-            $('.ico1-2').css('display','none');
-        });
-    });
-
-    $('.sloi_item__2').hover(function(){
-        $('.ico2').css('display','none');
-        $('.ico2-2').css('display','inline-block');
-        $(this).mouseleave(function(){
-            $('.ico2').css('display','inline-block');
-            $('.ico2-2').css('display','none');
-        });
-    });
-
-    $('.sloi_item__3').hover(function(){
-        $('.ico3').css('display','none');
-        $('.ico3-2').css('display','inline-block');
-        $(this).mouseleave(function(){
-            $('.ico3').css('display','inline-block');
-            $('.ico3-2').css('display','none');
-        });
-    });
-
-    $('.sloi_item__4').hover(function(){
-        $('.ico4').css('display','none');
-        $('.ico4-2').css('display','inline-block');
-        $(this).mouseleave(function(){
-            $('.ico4').css('display','inline-block');
-            $('.ico4-2').css('display','none');
-        });
-    });
-
-    $('.sloi_item__5').hover(function(){
         $('.ico5').css('display','none');
         $('.ico5-2').css('display','inline-block');
         $(this).mouseleave(function(){
@@ -67,67 +34,74 @@ $(document).ready(function(){
         });
     });
 
-    $('.icons_item__inner1, .sloi_item__1').hover(function () { 
-        $('.sloi_item__1').css('padding-left','30px');
-        $('.sloi_item__2').css('top','80px');
-        $('.sloi_item__3').css('top','140px');
-        $('.sloi_item__4').css('top','200px');
-        $('.sloi_item__5').css('bottom','17px');
+    $('.sloi_item__2').hover(function(){
+         $('.ico4').css('display','none');
+        $('.ico4-2').css('display','inline-block');
         $(this).mouseleave(function(){
-            $('.sloi_item__1').css('padding-left','0px');
-            $('.sloi_item__2').css('top','60px');
-            $('.sloi_item__3').css('top','120px');
-            $('.sloi_item__4').css('top','180px');
-            $('.sloi_item__5').css('bottom','37px');
+            $('.ico4').css('display','inline-block');
+            $('.ico4-2').css('display','none');
         });
+        // $('.ico2').css('display','none');
+        // $('.ico2-2').css('display','inline-block');
+        // $(this).mouseleave(function(){
+        //     $('.ico2').css('display','inline-block');
+        //     $('.ico2-2').css('display','none');
+        // });
     });
 
-    $('.icons_item__inner2, .sloi_item__2').hover(function () { 
-        $('.sloi_item__2').css('padding-left','30px');
-        $('.sloi_item__1').css('top','-20px');
-        $('.sloi_item__3').css('top','160px');
-        $('.sloi_item__4').css('top','220px');
-        $('.sloi_item__5').css('bottom','-3px');
+    $('.sloi_item__3').hover(function(){
+         $('.ico4').css('display','none');
+        $('.ico4-2').css('display','inline-block');
         $(this).mouseleave(function(){
-            $('.sloi_item__2').css('padding-left','0px');
-            $('.sloi_item__1').css('top','0px');
-            $('.sloi_item__3').css('top','120px');
-            $('.sloi_item__4').css('top','180px');
-            $('.sloi_item__5').css('bottom','37px');
+            $('.ico4').css('display','inline-block');
+            $('.ico4-2').css('display','none');
         });
+        // $('.ico3').css('display','none');
+        // $('.ico3-2').css('display','inline-block');
+        // $(this).mouseleave(function(){
+        //     $('.ico3').css('display','inline-block');
+        //     $('.ico3-2').css('display','none');
+        // });
     });
 
-    $('.icons_item__inner3, .sloi_item__3').hover(function () { 
-        $('.sloi_item__3').css('padding-left','30px');
-        $('.sloi_item__1').css('top','-20px');
-        $('.sloi_item__2').css('top','40px');
-        $('.sloi_item__4').css('top','220px');
-        $('.sloi_item__5').css('bottom','-3px');
+    $('.sloi_item__4').hover(function(){
+          $('.ico3').css('display','none');
+        $('.ico3-2').css('display','inline-block');
         $(this).mouseleave(function(){
-            $('.sloi_item__3').css('padding-left','0px');
-            $('.sloi_item__1').css('top','0px');
-            $('.sloi_item__2').css('top','60px');
-            $('.sloi_item__4').css('top','180px');
-            $('.sloi_item__5').css('bottom','37px');
+            $('.ico3').css('display','inline-block');
+            $('.ico3-2').css('display','none');
         });
+        // $('.ico4').css('display','none');
+        // $('.ico4-2').css('display','inline-block');
+        // $(this).mouseleave(function(){
+        //     $('.ico4').css('display','inline-block');
+        //     $('.ico4-2').css('display','none');
+        // });
     });
 
-    $('.icons_item__inner4, .sloi_item__4').hover(function () { 
-        $('.sloi_item__4').css('padding-left','30px');
-        $('.sloi_item__1').css('top','-20px');
-        $('.sloi_item__2').css('top','40px');
-        $('.sloi_item__3').css('top','100px');
-        $('.sloi_item__5').css('bottom','-3px');
+    $('.sloi_item__5').hover(function(){
+        $('.ico1').css('display','none');
+        $('.ico1-2').css('display','inline-block');
+
+        $('.ico2').css('display','none');
+        $('.ico2-2').css('display','inline-block');
         $(this).mouseleave(function(){
-            $('.sloi_item__4').css('padding-left','0px');
-            $('.sloi_item__1').css('top','0px');
-            $('.sloi_item__2').css('top','60px');
-            $('.sloi_item__3').css('top','120px');
-            $('.sloi_item__5').css('bottom','37px');
+            $('.ico1').css('display','inline-block');
+            $('.ico1-2').css('display','none');
+            $('.ico2').css('display','inline-block');
+            $('.ico2-2').css('display','none');
         });
+        // $('.ico5').css('display','none');
+        // $('.ico5-2').css('display','inline-block');
+        // $(this).mouseleave(function(){
+        //     $('.ico5').css('display','inline-block');
+        //     $('.ico5-2').css('display','none');
+        // });
     });
 
-    $('.icons_item__inner5, .sloi_item__5').hover(function () { 
+//---------------------------------------------
+
+    $('.icons_item__inner1, .sloi_item__5').hover(function () { 
         $('.sloi_item__5').css('padding-left','30px');
         $('.sloi_item__1').css('top','-20px');
         $('.sloi_item__2').css('top','40px');
@@ -140,6 +114,138 @@ $(document).ready(function(){
             $('.sloi_item__3').css('top','120px');
             $('.sloi_item__4').css('top','180px');
         });
+        // $('.sloi_item__1').css('padding-left','30px');
+        // $('.sloi_item__2').css('top','80px');
+        // $('.sloi_item__3').css('top','140px');
+        // $('.sloi_item__4').css('top','200px');
+        // $('.sloi_item__5').css('bottom','17px');
+        // $(this).mouseleave(function(){
+        //     $('.sloi_item__1').css('padding-left','0px');
+        //     $('.sloi_item__2').css('top','60px');
+        //     $('.sloi_item__3').css('top','120px');
+        //     $('.sloi_item__4').css('top','180px');
+        //     $('.sloi_item__5').css('bottom','37px');
+        // });
+    });
+
+    $('.icons_item__inner2, .sloi_item__5').hover(function () { 
+        $('.sloi_item__5').css('padding-left','30px');
+        $('.sloi_item__1').css('top','-20px');
+        $('.sloi_item__2').css('top','40px');
+        $('.sloi_item__3').css('top','100px');
+        $('.sloi_item__4').css('top','160px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__5').css('padding-left','0px');
+            $('.sloi_item__1').css('top','0px');
+            $('.sloi_item__2').css('top','60px');
+            $('.sloi_item__3').css('top','120px');
+            $('.sloi_item__4').css('top','180px');
+        });
+        // $('.sloi_item__2').css('padding-left','30px');
+        // $('.sloi_item__1').css('top','-20px');
+        // $('.sloi_item__3').css('top','160px');
+        // $('.sloi_item__4').css('top','220px');
+        // $('.sloi_item__5').css('bottom','-3px');
+        // $(this).mouseleave(function(){
+        //     $('.sloi_item__2').css('padding-left','0px');
+        //     $('.sloi_item__1').css('top','0px');
+        //     $('.sloi_item__3').css('top','120px');
+        //     $('.sloi_item__4').css('top','180px');
+        //     $('.sloi_item__5').css('bottom','37px');
+        // });
+    });
+
+    $('.icons_item__inner3, .sloi_item__4').hover(function () { 
+        $('.sloi_item__4').css('padding-left','30px');
+        $('.sloi_item__1').css('top','-20px');
+        $('.sloi_item__2').css('top','40px');
+        $('.sloi_item__3').css('top','100px');
+        $('.sloi_item__5').css('bottom','-3px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__4').css('padding-left','0px');
+            $('.sloi_item__1').css('top','0px');
+            $('.sloi_item__2').css('top','60px');
+            $('.sloi_item__3').css('top','120px');
+            $('.sloi_item__5').css('bottom','37px');
+        });
+        // $('.sloi_item__3').css('padding-left','30px');
+        // $('.sloi_item__1').css('top','-20px');
+        // $('.sloi_item__2').css('top','40px');
+        // $('.sloi_item__4').css('top','220px');
+        // $('.sloi_item__5').css('bottom','-3px');
+        // $(this).mouseleave(function(){
+        //     $('.sloi_item__3').css('padding-left','0px');
+        //     $('.sloi_item__1').css('top','0px');
+        //     $('.sloi_item__2').css('top','60px');
+        //     $('.sloi_item__4').css('top','180px');
+        //     $('.sloi_item__5').css('bottom','37px');
+        // });
+    });
+
+    $('.icons_item__inner4, .sloi_item__2').hover(function () { 
+        $('.sloi_item__2').css('padding-left','30px');
+        $('.sloi_item__1').css('top','-20px');
+        $('.sloi_item__3').css('top','160px');
+        $('.sloi_item__4').css('top','220px');
+        $('.sloi_item__5').css('bottom','-3px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__2').css('padding-left','0px');
+            $('.sloi_item__1').css('top','0px');
+            $('.sloi_item__3').css('top','120px');
+            $('.sloi_item__4').css('top','180px');
+            $('.sloi_item__5').css('bottom','37px');
+        });
+        $('.sloi_item__3').css('padding-left','30px');
+        $('.sloi_item__1').css('top','-20px');
+        $('.sloi_item__2').css('top','40px');
+        $('.sloi_item__4').css('top','220px');
+        $('.sloi_item__5').css('bottom','-3px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__3').css('padding-left','0px');
+            $('.sloi_item__1').css('top','0px');
+            $('.sloi_item__2').css('top','60px');
+            $('.sloi_item__4').css('top','180px');
+            $('.sloi_item__5').css('bottom','37px');
+        });
+        // $('.sloi_item__4').css('padding-left','30px');
+        // $('.sloi_item__1').css('top','-20px');
+        // $('.sloi_item__2').css('top','40px');
+        // $('.sloi_item__3').css('top','100px');
+        // $('.sloi_item__5').css('bottom','-3px');
+        // $(this).mouseleave(function(){
+        //     $('.sloi_item__4').css('padding-left','0px');
+        //     $('.sloi_item__1').css('top','0px');
+        //     $('.sloi_item__2').css('top','60px');
+        //     $('.sloi_item__3').css('top','120px');
+        //     $('.sloi_item__5').css('bottom','37px');
+        // });
+    });
+
+    $('.icons_item__inner5, .sloi_item__1').hover(function () { 
+        $('.sloi_item__1').css('padding-left','30px');
+        $('.sloi_item__2').css('top','80px');
+        $('.sloi_item__3').css('top','140px');
+        $('.sloi_item__4').css('top','200px');
+        $('.sloi_item__5').css('bottom','17px');
+        $(this).mouseleave(function(){
+            $('.sloi_item__1').css('padding-left','0px');
+            $('.sloi_item__2').css('top','60px');
+            $('.sloi_item__3').css('top','120px');
+            $('.sloi_item__4').css('top','180px');
+            $('.sloi_item__5').css('bottom','37px');
+        });
+        // $('.sloi_item__5').css('padding-left','30px');
+        // $('.sloi_item__1').css('top','-20px');
+        // $('.sloi_item__2').css('top','40px');
+        // $('.sloi_item__3').css('top','100px');
+        // $('.sloi_item__4').css('top','160px');
+        // $(this).mouseleave(function(){
+        //     $('.sloi_item__5').css('padding-left','0px');
+        //     $('.sloi_item__1').css('top','0px');
+        //     $('.sloi_item__2').css('top','60px');
+        //     $('.sloi_item__3').css('top','120px');
+        //     $('.sloi_item__4').css('top','180px');
+        // });
     });
 
     // $(".icons_item").hover(function(e){
