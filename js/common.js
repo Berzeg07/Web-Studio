@@ -22,6 +22,51 @@ $(document).ready(function(){
       $(tab).addClass('active');
   });
 
+    $('.sloi_item__1').hover(function(){
+        $('.ico1').css('display','none');
+        $('.ico1-2').css('display','inline-block');
+        $(this).mouseleave(function(){
+            $('.ico1').css('display','inline-block');
+            $('.ico1-2').css('display','none');
+        });
+    });
+
+    $('.sloi_item__2').hover(function(){
+        $('.ico2').css('display','none');
+        $('.ico2-2').css('display','inline-block');
+        $(this).mouseleave(function(){
+            $('.ico2').css('display','inline-block');
+            $('.ico2-2').css('display','none');
+        });
+    });
+
+    $('.sloi_item__3').hover(function(){
+        $('.ico3').css('display','none');
+        $('.ico3-2').css('display','inline-block');
+        $(this).mouseleave(function(){
+            $('.ico3').css('display','inline-block');
+            $('.ico3-2').css('display','none');
+        });
+    });
+
+    $('.sloi_item__4').hover(function(){
+        $('.ico4').css('display','none');
+        $('.ico4-2').css('display','inline-block');
+        $(this).mouseleave(function(){
+            $('.ico4').css('display','inline-block');
+            $('.ico4-2').css('display','none');
+        });
+    });
+
+    $('.sloi_item__5').hover(function(){
+        $('.ico5').css('display','none');
+        $('.ico5-2').css('display','inline-block');
+        $(this).mouseleave(function(){
+            $('.ico5').css('display','inline-block');
+            $('.ico5-2').css('display','none');
+        });
+    });
+
     $('.icons_item__inner1, .sloi_item__1').hover(function () { 
         $('.sloi_item__1').css('padding-left','30px');
         $('.sloi_item__2').css('top','80px');
