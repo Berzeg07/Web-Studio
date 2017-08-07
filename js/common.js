@@ -15,7 +15,14 @@ $(document).ready(function(){
       $(tab).addClass('active');
   });
 
-    $('.icons_item__inner1').hover(function () { 
+    $('.tab a').hover(function (e) {      
+      var tab = $(this).attr('href');     
+      $('.block-2_txt').removeClass('active');            
+      $('.block-2_txt').not(tab).css('height','0');
+      $(tab).addClass('active');
+  });
+
+    $('.icons_item__inner1, .sloi_item__1').hover(function () { 
         $('.sloi_item__1').css('padding-left','30px');
         $('.sloi_item__2').css('top','80px');
         $('.sloi_item__3').css('top','140px');
@@ -30,7 +37,7 @@ $(document).ready(function(){
         });
     });
 
-    $('.icons_item__inner2').hover(function () { 
+    $('.icons_item__inner2, .sloi_item__2').hover(function () { 
         $('.sloi_item__2').css('padding-left','30px');
         $('.sloi_item__1').css('top','-20px');
         $('.sloi_item__3').css('top','160px');
@@ -45,7 +52,7 @@ $(document).ready(function(){
         });
     });
 
-    $('.icons_item__inner3').hover(function () { 
+    $('.icons_item__inner3, .sloi_item__3').hover(function () { 
         $('.sloi_item__3').css('padding-left','30px');
         $('.sloi_item__1').css('top','-20px');
         $('.sloi_item__2').css('top','40px');
@@ -60,7 +67,7 @@ $(document).ready(function(){
         });
     });
 
-    $('.icons_item__inner4').hover(function () { 
+    $('.icons_item__inner4, .sloi_item__4').hover(function () { 
         $('.sloi_item__4').css('padding-left','30px');
         $('.sloi_item__1').css('top','-20px');
         $('.sloi_item__2').css('top','40px');
@@ -75,7 +82,7 @@ $(document).ready(function(){
         });
     });
 
-    $('.icons_item__inner5').hover(function () { 
+    $('.icons_item__inner5, .sloi_item__5').hover(function () { 
         $('.sloi_item__5').css('padding-left','30px');
         $('.sloi_item__1').css('top','-20px');
         $('.sloi_item__2').css('top','40px');
@@ -89,8 +96,6 @@ $(document).ready(function(){
             $('.sloi_item__4').css('top','180px');
         });
     });
-
-
 
     // $(".icons_item").hover(function(e){
     //     e.preventDefault();
