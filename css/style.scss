@@ -93,8 +93,10 @@ span{
                         color:#9FA0A3;
                         font-size:15px;
                         text-decoration:underline;
+                        -webkit-transition:0.5s;
                         &:hover{
                             color:#fff;
+                            font-size:17px;
                         }
                     }
                     @media only screen and (min-width: 768px) {
@@ -115,8 +117,12 @@ span{
                 padding-left: 32px;
                 border:2px solid #98999B;
                 background: url(../img/tel.png) no-repeat left 15px center;
+                -webkit-transition:0.5s;
+                &:hover{
+                    background: #fff url(../img/tel.png) no-repeat left 15px center;
+                    color:black;
+                }
                 @media only screen and (min-width: 768px) {
-                    // border:none;
                     width: 100%;
                     background: none;
                     padding-left: 0;
@@ -161,10 +167,10 @@ span{
             text-align: center;
             font-size: 28px;
             @media only screen and (min-width: 992px) {
-               text-align: left;
-               font-size: 35px;
-           }
-           @media only screen and (min-width: 1240px) {
+             text-align: left;
+             font-size: 35px;
+         }
+         @media only screen and (min-width: 1240px) {
             font-size: 41px;
         }
     }
@@ -234,11 +240,11 @@ span{
             color:#FFFFFF;
             font-size: 25px;
             b{
-               font-family: "SegoeUISemiBold";
-           }
-       }
-   }
-   .form-header{
+             font-family: "SegoeUISemiBold";
+         }
+     }
+ }
+ .form-header{
     margin-top: 27px;
     input[type="text"]{
         background: none;
@@ -294,19 +300,19 @@ p{
 
 // Табы
 .active{ 
-   transition:1.5s;
-   opacity:1 !important;
-   height:auto !important; 
-   visibility: visible !important;
+ transition:1.5s;
+ opacity:1 !important;
+ height:auto !important; 
+ visibility: visible !important;
 }
 .tabs_block{
-   padding: 60px 0px 80px; 
-   min-height: 264px;
+ padding: 60px 0px 80px; 
+ min-height: 264px;
 }
 .tabs_block .txt-1:first-child {
-   opacity:1 ;
-   height:auto ; 
-   visibility: visible ;
+ opacity:1 ;
+ height:auto ; 
+ visibility: visible ;
 }
 // ...............................
 
@@ -323,25 +329,25 @@ p{
       opacity:0;
       height: 0;
       visibility:hidden;  
-    }
-    &_message{
-        padding: 36px 5px;
-        margin-top: 60px;
-        text-align: center;
-        border-radius:10px;
-        background: #fff;
-        margin-bottom: 70px;
-        -webkit-box-shadow: 7px 9px 26px -2px rgba(0,0,0,0.51);
-        -moz-box-shadow: 7px 9px 26px -2px rgba(0,0,0,0.51);
-        box-shadow: 7px 9px 26px -2px rgba(0,0,0,0.51);
-        @media only screen and (min-width: 768px) {
-         padding: 36px 21px;
-     }
-     b{
-        font-family: "SegoeUIItalic";
-        color:black;
-        font-weight: bold;
-    }
+  }
+  &_message{
+    padding: 36px 5px;
+    margin-top: 60px;
+    text-align: center;
+    border-radius:10px;
+    background: #fff;
+    margin-bottom: 70px;
+    -webkit-box-shadow: 7px 9px 26px -2px rgba(0,0,0,0.51);
+    -moz-box-shadow: 7px 9px 26px -2px rgba(0,0,0,0.51);
+    box-shadow: 7px 9px 26px -2px rgba(0,0,0,0.51);
+    @media only screen and (min-width: 768px) {
+       padding: 36px 21px;
+   }
+   b{
+    font-family: "SegoeUIItalic";
+    color:black;
+    font-weight: bold;
+}
 }
 &_but{
     max-width: 550px;
@@ -438,88 +444,88 @@ h2{
 
     &_item{
         @media only screen and (min-width: 992px) {
-        width: 20%;
-    }
+            width: 20%;
+        }
         position: relative;
         text-align: center;
         display: inline-block;
         -webkit-transition:1s;
         z-index:9999;
-      &__inner{
-        cursor:pointer;
-        overflow:hidden;
-        width: 94px;
-        margin: 20px auto;
-        .ico-none{
-            display: none;
+        &__inner{
+            cursor:pointer;
+            overflow:hidden;
+            width: 94px;
+            margin: 20px auto;
+            .ico-none{
+                display: none;
+            }
         }
-    }
-    &__inner1:hover{
-        .ico1{
-            display: none !important;
+        &__inner1:hover{
+            .ico1{
+                display: none !important;
+            }
+            .ico1-2{
+                display: inline-block !important;
+            }
         }
-        .ico1-2{
-            display: inline-block !important;
+        &__inner2:hover{
+            .ico2{
+                display: none !important;
+            }
+            .ico2-2{
+                display: inline-block !important;
+            }
         }
-    }
-    &__inner2:hover{
-        .ico2{
-            display: none !important;
+        &__inner3:hover{
+            .ico3{
+                display: none !important;
+            }
+            .ico3-2{
+                display: inline-block !important;
+            }
         }
-        .ico2-2{
-            display: inline-block !important;
+        &__inner4:hover{
+            .ico4{
+                display: none !important;
+            }
+            .ico4-2{
+                display: inline-block !important;
+            }
         }
-    }
-    &__inner3:hover{
-        .ico3{
-            display: none !important;
+        &__inner5:hover{
+            .ico5{
+                display: none !important;
+            }
+            .ico5-2{
+                display: inline-block !important;
+            }
         }
-        .ico3-2{
-            display: inline-block !important;
-        }
-    }
-    &__inner4:hover{
-        .ico4{
-            display: none !important;
-        }
-        .ico4-2{
-            display: inline-block !important;
-        }
-    }
-    &__inner5:hover{
-        .ico5{
-            display: none !important;
-        }
-        .ico5-2{
-            display: inline-block !important;
-        }
-    }
-    @media only screen and (min-width: 768px) {
-        display: block;
-    }
-    div{
-        height: 110px;
-    }
-    span{
-        text-transform: uppercase;
-        font-family: "SegoeUILight";
-        color: #231f20;
-        font-size: 15px;
-    }
-}
-&_item:last-child{
-    div{
-        height: 90px;
         @media only screen and (min-width: 768px) {
-            height: 108px;
+            display: block;
+        }
+        div{
+            height: 110px;
+        }
+        span{
+            text-transform: uppercase;
+            font-family: "SegoeUILight";
+            color: #231f20;
+            font-size: 15px;
         }
     }
-}
+    &_item:last-child{
+        div{
+            height: 90px;
+            @media only screen and (min-width: 768px) {
+                height: 108px;
+            }
+        }
+    }
 }
 .no-padding{
-     @media only screen and (min-width: 992px) {
-        padding: 0;
-     }
+   @media only screen and (min-width: 992px) {
+    padding: 0;
+}
 }
 .img-responsive{
     @media only screen and (min-width: 768px) {
@@ -538,7 +544,7 @@ h2{
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s;
-      
+
         &__1{
             z-index: 5;
             top: 0px;
@@ -567,4 +573,122 @@ h2{
             bottom: 37px;
         }
     }
+}
+
+/* Pop up
+============================*/
+#mask { position:absolute; left:0; top:0;  z-index:9000;  background-color:#000; width: 100%; height: 100%;  display:none; }
+.form-button{
+    width: 100%;
+    outline: none;
+    border:none;
+    background: #17C4BB;
+    color:#fff;
+    font-family: "SegoeUIRegular";
+    font-size: 25px;
+    padding: 18px 0px;
+    text-align: center;
+    -webkit-transition:0.5s;
+    &:hover{
+        background: #39E6DD;
+    }
+
+}
+.window{ 
+    display: none;
+    position:absolute;
+    left:0;  
+    top:0;
+    display:none;
+    z-index:9998; 
+    border:none;
+    .form-wrap-main{
+        text-align: center;
+        border:1px solid grey;
+        background:url(../img/pop-bg.jpg) no-repeat top center;
+        border-radius:10px 10px 0px 0px;
+        .form-title{
+            padding:20px 0px;
+            span{
+                font-size: 30px;
+                color: #2d3e58;
+                font-family: "SegoeUIRegular";
+            }
+        }
+        .input-form{
+            padding: 0 28px;
+            input{
+                width: 100%;
+                height: 46px;
+                opacity: 0.82;
+                background-color: white;
+                border: 2px solid #dbe1e4;
+                border-radius: 4px;
+                font-size: 17px;
+                color: #b4bdc2;
+                font-family: "SegoeUIRegular";
+                outline: none;
+                margin-bottom: 16px;
+                padding-left: 58px;
+            }
+            label{
+                position: relative;
+            }
+            label:after{
+                position: absolute;
+                content:'';
+                height: 42px;
+                width: 46px;
+                top: -14px;
+                left: 2px;
+            }
+            label:nth-child(1):after{
+                background:#F0F1F2 url(../img/in1.png) no-repeat top 10px center;
+            }
+            label:nth-child(2):after{
+                background:#F0F1F2 url(../img/in2.png) no-repeat top 10px center;
+            }
+            label:nth-child(3):after{
+                background:#F0F1F2 url(../img/in3.png) no-repeat top 10px center;
+            }
+        }
+        @media only screen and (min-width: 380px) {
+            width: 372px;
+        }
+        img{
+            margin: 0 auto;
+        }
+        .form_audit{
+            padding-top: 47px;
+        }
+        form{
+            p{
+             font-family: "SegoeUIRegular";
+             padding:0px 10px;
+         }
+         .first{
+            font-size: 20px;
+            color: #2D3E58;
+            padding: 14px 0px 20px;
+        }
+        .last{
+            padding-bottom: 30px;
+            color: #67768d;
+            font-size: 16px;
+            b{
+                color: #58677e;
+                font-size: 17px;
+            }
+        }
+    }
+}
+.dd-close{
+    width: 19px;
+    height: 19px;
+    background:url(../img/close.png);
+    position:absolute;
+    top:13px;
+    right: 13px;
+    cursor: pointer;
+}
 }

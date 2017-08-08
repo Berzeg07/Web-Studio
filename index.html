@@ -22,7 +22,7 @@
 			<div class="header_top">
 
 				<div class="header_top__item">
-					<img class="img-responsive" src="img/logo.png" alt="">
+					<a href="https://kit.msk.ru/"><img class="img-responsive" src="img/logo.png" alt=""></a>
 				</div>
 				
 				<div class="header_top__item">
@@ -39,7 +39,7 @@
 				</div>
 
 				<div class="header_top__item">
-					<a class="number" href="tel:+74998008525">8 <b>(499)</b> 800 85 25</a>
+					<a class="number" href="#">8 <b>(499)</b> 800 85 25</a>
 				</div>
 
 			</div>
@@ -74,9 +74,9 @@
 									<p><b>Вашего бизнеса</b></p>
 								</div>
 
-								<form class="form-header" action="#">
-									<input type="text" placeholder="Ваше имя" required>
-									<input class="phone" type="text" placeholder="Ваш телефон" required>
+								<form class="form-header form-message" action="#">
+									<input type="text" name="uname" placeholder="Ваше имя" required>
+									<input class="phone" name="phone" type="text" placeholder="Ваш телефон" required>
 									<button type="submit">хочу новых клиентов</button>
 								</form>
 								<span>Бесплатно</span>
@@ -240,7 +240,7 @@
 							<a href="#">Скачать</a>
 						</div>		
 						<div class="block-2_but__item">
-							<a href="#">Выслать на почту</a>
+							<a href="#log-in" name="modal">Выслать на почту</a>
 						</div>		
 					</div>
 				</div>
@@ -249,7 +249,46 @@
 		</div>	
 	</div>
 
+	<div id="mask"></div>
+	<div id="log-in" class="window">
+		<div class="dd-form-wrap">
+			<form class="form-message" action="#">
+				<div class="form-wrap-main">
+					<div class="dd-close"></div>
+					<div class="form-title"><span>Свяжитесь с нами!</span></div>
+					<div class="input-form">
+						<label>
+							<input class="input-form" type="text" placeholder="Имя" required>
+						</label>
+						<label>
+							<input class="input-form phone" type="text" placeholder="Телефон" required>
+						</label>
+						<label>
+							<input class="input-form" type="email" placeholder="E-mail" name="phone" required>
+						</label>
+					</div>
+					<button class="form-button" type="submit" name="submit">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
 
+	<div id="thanks" class="window">
+		<div class="form-wrap-main">
+
+			<div class="dd-close"></div>
+			<div class="form_audit">
+				<img class="img-responsive" src="img/galka.png" alt="">
+				<form action="#">
+					<p class="first">Данные успешно<br/> отправлены. Спасибо!</p>
+					<p class="last">Приобретите полный аудит<br/> Вашего сайта всего за <b>1490 руб</b></p>
+					<button class="form-button" type="submit" name="submit">Мне нужен аудит!</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<a href="#thanks" name="modal"></a>
 
 
 
